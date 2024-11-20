@@ -1,0 +1,22 @@
+#include<stdio.h>
+int i;
+void arr_print(int arr[4], int size){
+if(i<size){
+	printf("%d\n", arr[i]);
+	i=i+1;
+	arr_print(arr,size);
+}	
+
+}
+int main(){
+	int i, num;
+	int ar[100];
+	printf("Enter size of array: ");
+	scanf("%d", &num);
+	for(i=0; i<num; i++){
+		printf("Enter %d element: ", i+1);
+		scanf("%d", &ar[i]);
+	}
+	int size = 5;
+	arr_print(ar, size);
+}
